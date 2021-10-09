@@ -12,18 +12,15 @@ public class Main {
                     new Course("Черчения"))));
             students.add(new Student("Екатерина", Arrays.asList(new Course("Физики"))));
 
-
             System.out.println(students.stream()
                     .map(s -> s.getCourses())
                     .flatMap(f -> f.stream())
                     .collect(Collectors.toSet()));
 
-
             System.out.println(students.stream()
                     .sorted((s1, s2) -> s2.getCourses().size() - s1.getCourses().size())
                     .limit(2)
                     .collect(Collectors.toList()));
-
 
             Course course = new Course("Физики");
             System.out.println(students.stream()

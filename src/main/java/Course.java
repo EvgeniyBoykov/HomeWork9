@@ -20,7 +20,6 @@ public class Course {
         public String toString() {
             return "курс " + name;
         }
-
         @Override
         public boolean equals(Object o) {
             if (this == o) return true;
@@ -28,7 +27,6 @@ public class Course {
             Course course = (Course) o;
             return Objects.equals(name, course.name);
         }
-
         @Override
         public int hashCode() {
             return Objects.hash(name);

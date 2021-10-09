@@ -16,15 +16,12 @@ public class Student {
         public void setName(String name) {
             this.name = name;
         }
-
         public List<Course> getCourses() {
             return courses;
         }
-
         public void setCourses(List<Course> courses) {
             this.courses = courses;
         }
-
         @Override
         public String toString() {
             return "Студент " +
